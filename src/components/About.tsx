@@ -30,9 +30,9 @@ const About = () => {
             What Makes PR Ultimate Special
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground leading-relaxed px-2 sm:px-0">
-            Pine-Richland Ultimate stands out for combining co-ed participation and inclusive team culture 
-            with a proven track record in one of the country's strongest high school ultimate regions. 
-            Players benefit from dedicated coaching, competitive league play, and a supportive community 
+            Pine-Richland Ultimate stands out for combining co-ed participation and inclusive team culture
+            with a proven track record in one of the country's strongest high school ultimate regions.
+            Players benefit from dedicated coaching, competitive league play, and a supportive community
             that treats the team as an integral part of the district's proud athletic tradition.
           </p>
         </div>

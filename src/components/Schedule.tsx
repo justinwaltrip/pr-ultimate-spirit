@@ -41,7 +41,7 @@ const Schedule = () => {
             Season Information
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground leading-relaxed px-2 sm:px-0">
-            We play year-round with Fall, Winter (indoor), and Spring seasons. 
+            We play year-round with Fall, Winter (indoor), and Spring seasons.
             Division: Open (Gender) Division I.
           </p>
         </div>

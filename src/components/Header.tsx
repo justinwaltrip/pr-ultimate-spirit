@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/ThemeToggle";
-import logo from "@/assets/logo.jpg";
+import logo from "@/assets/logo.svg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,7 +20,7 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <nav className="flex items-center justify-between h-16 md:h-20">
           <a href="#" className="flex items-center gap-3">
-            <img src={logo} alt="PR Ultimate Logo" className="w-10 h-10 object-contain" />
+            <img src={logo} alt="PR Ultimate Logo" className="w-10 h-10 object-contain dark:invert" />
             <div className="hidden sm:block">
               <span className="font-display text-lg md:text-xl font-bold tracking-wide text-foreground">
                 PR Ultimate

@@ -11,11 +11,11 @@ const Footer = () => {
               Pine-Richland Ultimate
             </span>
           </div>
-          
+
           <p className="font-display text-lg uppercase tracking-[0.2em] text-white/80 mb-8">
             Spirit of the Game • Teamwork • Excellence
           </p>
-          
+
           <div className="flex justify-center gap-8 mb-8">
             <a href="#about" className="text-sm text-white/70 hover:text-white transition-colors">
               About
@@ -30,7 +30,7 @@ const Footer = () => {
               Contact
             </a>
           </div>
-          
+
           <p className="text-sm text-white/50">
             © {new Date().getFullYear()} Pine-Richland Ultimate Frisbee. All rights reserved.
           </p>

@@ -13,18 +13,18 @@ const History = () => {
             </h2>
             <div className="space-y-5 text-base sm:text-lg text-muted-foreground leading-relaxed">
               <p>
-                The Pine-Richland ultimate team began as a student-driven club in the mid-2000s with 
+                The Pine-Richland ultimate team began as a student-driven club in the mid-2000s with
                 roughly a dozen players and quickly committed to competing in the local PHUL structure.
               </p>
               <p>
-                Over time, the program expanded its roster, joined USA Ultimate's high school division, 
-                and earned regional recognition by winning multiple league titles, including back-to-back 
+                Over time, the program expanded its roster, joined USA Ultimate's high school division,
+                and earned regional recognition by winning multiple league titles, including back-to-back
                 PHUL championships for the boys team.
               </p>
               <p>
-                The team reflects the broader Pine-Richland athletic mission, emphasizing academic excellence, 
-                personal growth, and sportsmanship alongside competitive success. PR Ultimate leans into 
-                ultimate's "Spirit of the Game," teaching athletes to self-officiate, resolve conflicts 
+                The team reflects the broader Pine-Richland athletic mission, emphasizing academic excellence,
+                personal growth, and sportsmanship alongside competitive success. PR Ultimate leans into
+                ultimate's "Spirit of the Game," teaching athletes to self-officiate, resolve conflicts
                 respectfully, and compete with integrity.
               </p>
             </div>

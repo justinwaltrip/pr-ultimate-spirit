@@ -14,7 +14,7 @@ const Contact = () => {
               Join the Team
             </h2>
             <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed px-2 sm:px-0">
-              Interested in joining the team? There are no formal tryouts; all skill levels are welcome! 
+              Interested in joining the team? There are no formal tryouts; all skill levels are welcome!
               Practices are open to any middle or high school student in the Pine-Richland School District.
             </p>
           </div>
@@ -64,8 +64,8 @@ const Contact = () => {
           <div className="mt-12 text-center">
             <p className="text-sm sm:text-base text-muted-foreground">
               Email us at{" "}
-              <a 
-                href="mailto:prultimatecoaches@gmail.com" 
+              <a
+                href="mailto:prultimatecoaches@gmail.com"
                 className="text-primary hover:underline font-medium"
               >
                 prultimatecoaches@gmail.com
