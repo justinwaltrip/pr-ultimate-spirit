@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import logo from "@/assets/logo.jpg";
 
 const Header = () => {
@@ -38,6 +39,7 @@ const Header = () => {
                 {link.label}
               </a>
             ))}
+            <ThemeToggle />
             <Button variant="hero" size="sm">
               Join Team
             </Button>
@@ -67,9 +69,12 @@ const Header = () => {
                   {link.label}
                 </a>
               ))}
-              <Button variant="hero" size="sm" className="w-fit mt-2">
-                Join Team
-              </Button>
+              <div className="flex items-center gap-4 mt-2">
+                <ThemeToggle />
+                <Button variant="hero" size="sm" className="w-fit">
+                  Join Team
+                </Button>
+              </div>
             </div>
           </div>
         )}
