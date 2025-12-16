@@ -12,24 +12,24 @@ const Hero = () => {
           alt="Pine-Richland Ultimate Frisbee Team"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-foreground/70 via-foreground/50 to-foreground/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/60 to-black/85" />
       </div>
 
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10 text-center">
         <div className="max-w-4xl mx-auto">
-          <span className="inline-block font-display text-sm md:text-base uppercase tracking-[0.3em] text-accent mb-4 animate-fade-in-up">
+          <span className="inline-block font-display text-sm md:text-base uppercase tracking-[0.3em] text-accent mb-4 animate-fade-in-up drop-shadow-md">
             Pittsburgh High School Ultimate League
           </span>
           
-          <h1 className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-primary-foreground uppercase tracking-wide mb-6 animate-fade-in-up animate-delay-100">
+          <h1 className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-white uppercase tracking-wide mb-6 animate-fade-in-up animate-delay-100 drop-shadow-lg">
             Pine-Richland
-            <span className="block text-gradient bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <span className="block text-gradient bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent drop-shadow-none">
               Ultimate
             </span>
           </h1>
           
-          <p className="text-base sm:text-lg md:text-xl text-primary-foreground/90 max-w-2xl mx-auto mb-8 px-2 font-body leading-relaxed animate-fade-in-up animate-delay-200">
+          <p className="text-base sm:text-lg md:text-xl text-white/95 max-w-2xl mx-auto mb-8 px-4 font-body leading-relaxed animate-fade-in-up animate-delay-200 drop-shadow-md">
             A co-ed high school ultimate frisbee program built on Spirit of the Game, 
             teamwork, and excellence.
           </p>
