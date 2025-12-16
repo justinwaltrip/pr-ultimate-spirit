@@ -40,7 +40,7 @@ const Schedule = () => {
           <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground uppercase tracking-wide mb-6">
             Season Information
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-base sm:text-lg text-muted-foreground leading-relaxed px-2 sm:px-0">
             We play year-round with Fall, Winter (indoor), and Spring seasons. 
             Division: Open (Gender) Division I.
           </p>
@@ -74,7 +74,7 @@ const Schedule = () => {
                       <span className="block font-display text-xs uppercase tracking-wider text-muted-foreground mb-1">
                         {detail.label}
                       </span>
-                      <span className="text-sm text-foreground">{detail.value}</span>
+                      <span className="text-sm sm:text-base text-foreground leading-snug">{detail.value}</span>
                     </div>
                   </div>
                 ))}

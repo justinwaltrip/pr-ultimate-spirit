@@ -29,7 +29,7 @@ const About = () => {
           <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground uppercase tracking-wide mb-6">
             What Makes PR Ultimate Special
           </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
+          <p className="text-base sm:text-lg text-muted-foreground leading-relaxed px-2 sm:px-0">
             Pine-Richland Ultimate stands out for combining co-ed participation and inclusive team culture 
             with a proven track record in one of the country's strongest high school ultimate regions. 
             Players benefit from dedicated coaching, competitive league play, and a supportive community 
@@ -50,7 +50,7 @@ const About = () => {
               <h3 className="font-display text-xl font-bold text-foreground uppercase tracking-wide mb-3">
                 {value.title}
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                 {value.description}
               </p>
             </div>

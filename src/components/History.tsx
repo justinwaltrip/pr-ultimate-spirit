@@ -11,7 +11,7 @@ const History = () => {
             <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground uppercase tracking-wide mb-6">
               Team History
             </h2>
-            <div className="space-y-6 text-muted-foreground leading-relaxed">
+            <div className="space-y-5 text-base sm:text-lg text-muted-foreground leading-relaxed">
               <p>
                 The Pine-Richland ultimate team began as a student-driven club in the mid-2000s with 
                 roughly a dozen players and quickly committed to competing in the local PHUL structure.
