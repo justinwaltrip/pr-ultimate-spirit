@@ -29,7 +29,7 @@ const Hero = () => {
             </span>
           </h1>
           
-          <p className="text-lg md:text-xl text-primary-foreground/90 max-w-2xl mx-auto mb-8 font-body animate-fade-in-up animate-delay-200">
+          <p className="text-base sm:text-lg md:text-xl text-primary-foreground/90 max-w-2xl mx-auto mb-8 px-2 font-body leading-relaxed animate-fade-in-up animate-delay-200">
             A co-ed high school ultimate frisbee program built on Spirit of the Game, 
             teamwork, and excellence.
           </p>
