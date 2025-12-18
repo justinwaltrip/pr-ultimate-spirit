@@ -41,64 +41,50 @@ const Contact = () => {
 						</Button>
 					</div>
 
-					<div className="grid md:grid-cols-3 gap-8">
-						{/* Coach Contact */}
-						<div className="bg-card rounded-2xl p-8 shadow-card">
-							<div className="flex items-center gap-4 mb-6">
-								<div className="w-12 h-12 rounded-full gradient-primary flex items-center justify-center">
+					{/* Team Leadership */}
+					<div className="bg-card rounded-2xl p-8 shadow-card mb-8">
+						<div className="grid md:grid-cols-3 gap-6 mb-8">
+							<div className="text-center">
+								<div className="w-12 h-12 rounded-full gradient-primary flex items-center justify-center mx-auto mb-3">
 									<Mail className="w-6 h-6 text-primary-foreground" />
 								</div>
-								<div>
-									<h3 className="font-display text-lg font-bold text-foreground uppercase tracking-wide">
-										Coach
-									</h3>
-									<p className="text-muted-foreground">Justin Waltrip</p>
-								</div>
+								<h3 className="font-display text-lg font-bold text-foreground uppercase tracking-wide">
+									Coach
+								</h3>
+								<p className="text-muted-foreground">Justin Waltrip</p>
 							</div>
-							<Button variant="hero" className="w-full" asChild>
-								<a href="mailto:prultimatecoaches@gmail.com">Contact</a>
-							</Button>
-						</div>
 
-						{/* Captains Contact */}
-						<div className="bg-card rounded-2xl p-8 shadow-card">
-							<div className="flex items-center gap-4 mb-6">
-								<div className="w-12 h-12 rounded-full gradient-primary flex items-center justify-center">
+							<div className="text-center">
+								<div className="w-12 h-12 rounded-full gradient-primary flex items-center justify-center mx-auto mb-3">
 									<Users className="w-6 h-6 text-primary-foreground" />
 								</div>
-								<div>
-									<h3 className="font-display text-lg font-bold text-foreground uppercase tracking-wide">
-										Captains
-									</h3>
-									<p className="text-muted-foreground">Nolan Jackson & Bobby Ross</p>
-								</div>
+								<h3 className="font-display text-lg font-bold text-foreground uppercase tracking-wide">
+									Captains
+								</h3>
+								<p className="text-muted-foreground">Nolan Jackson & Bobby Ross</p>
 							</div>
-							<Button variant="outline" className="w-full" asChild>
-								<a href="mailto:prultimatecoaches@gmail.com">Contact</a>
-							</Button>
-						</div>
 
-						{/* Parent Helper Contact */}
-						<div className="bg-card rounded-2xl p-8 shadow-card">
-							<div className="flex items-center gap-4 mb-6">
-								<div className="w-12 h-12 rounded-full gradient-primary flex items-center justify-center">
+							<div className="text-center">
+								<div className="w-12 h-12 rounded-full gradient-primary flex items-center justify-center mx-auto mb-3">
 									<Users className="w-6 h-6 text-primary-foreground" />
 								</div>
-								<div>
-									<h3 className="font-display text-lg font-bold text-foreground uppercase tracking-wide">
-										Parent Helper
-									</h3>
-									<p className="text-muted-foreground">Catherine Fletcher</p>
-								</div>
+								<h3 className="font-display text-lg font-bold text-foreground uppercase tracking-wide">
+									Parent Helper
+								</h3>
+								<p className="text-muted-foreground">Catherine Fletcher</p>
 							</div>
-							<Button variant="outline" className="w-full" asChild>
-								<a href="mailto:prultimatecoaches@gmail.com">Contact</a>
-							</Button>
 						</div>
+
+						<Button variant="hero" className="w-full" asChild>
+							<a href="mailto:prultimatecoaches@gmail.com">
+								<Mail className="w-4 h-4 mr-2" />
+								Contact Us
+							</a>
+						</Button>
 					</div>
 
 					{/* Community Links Info */}
-					<div className="mt-8 bg-card rounded-xl p-6 shadow-card text-center">
+					<div className="bg-card rounded-xl p-6 shadow-card text-center">
 						<div className="flex items-center justify-center gap-3 mb-3">
 							<MessageCircle className="w-5 h-5 text-primary" />
 							<span className="font-display text-sm font-bold text-foreground uppercase tracking-wide">
@@ -106,14 +92,7 @@ const Contact = () => {
 							</span>
 						</div>
 						<p className="text-muted-foreground text-sm">
-							Contact us at{" "}
-							<a
-								href="mailto:prultimatecoaches@gmail.com"
-								className="text-primary hover:underline font-medium"
-							>
-								prultimatecoaches@gmail.com
-							</a>{" "}
-							for invites to our community groups.
+							Contact us for invites to our community groups.
 						</p>
 					</div>
 

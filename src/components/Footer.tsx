@@ -38,6 +38,12 @@ const Footer = () => {
 							Schedule
 						</a>
 						<a
+							href="#calendar"
+							className="text-sm text-white/70 hover:text-white transition-colors"
+						>
+							Calendar
+						</a>
+						<a
 							href="#contact"
 							className="text-sm text-white/70 hover:text-white transition-colors"
 						>
