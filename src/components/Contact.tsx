@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Mail, Users } from "lucide-react";
+import { Mail, Users, MessageCircle, ExternalLink } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -17,6 +17,21 @@ const Contact = () => {
               Interested in joining the team? There are no formal tryouts; all skill levels are welcome! 
               Practices are open to any middle or high school student in the Pine-Richland School District.
             </p>
+          </div>
+
+          {/* Registration Info */}
+          <div className="bg-primary/10 border border-primary/20 rounded-2xl p-6 mb-8 text-center">
+            <h3 className="font-display text-lg font-bold text-foreground uppercase tracking-wide mb-2">
+              Registration Required
+            </h3>
+            <p className="text-muted-foreground mb-4">
+              All players need a Pittsburgh Ultimate membership. Sign up before December 31 for $12 (or $16 in January).
+            </p>
+            <Button variant="hero" asChild>
+              <a href="https://pittsburgh-ultimate.org" target="_blank" rel="noopener noreferrer">
+                Register at pittsburgh-ultimate.org <ExternalLink className="w-4 h-4 ml-2" />
+              </a>
+            </Button>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -40,7 +55,7 @@ const Contact = () => {
               </Button>
             </div>
 
-            {/* Team Captains */}
+            {/* Parent Helper Contact */}
             <div className="bg-card rounded-2xl p-8 shadow-card">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 rounded-full gradient-primary flex items-center justify-center">
@@ -48,17 +63,43 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-display text-lg font-bold text-foreground uppercase tracking-wide">
-                    Team Captains
+                    Parent Helper
                   </h3>
-                  <p className="text-muted-foreground">Nolan Jackson & Bobby Ross</p>
+                  <p className="text-muted-foreground">Catherine Fletcher</p>
                 </div>
               </div>
               <Button variant="outline" className="w-full" asChild>
-                <a href="mailto:prultimatecoaches@gmail.com">
-                  Get in Touch
+                <a href="mailto:cgfletcher1225@gmail.com">
+                  Contact Catherine
                 </a>
               </Button>
             </div>
+          </div>
+
+          {/* Community Links */}
+          <div className="mt-8 grid md:grid-cols-2 gap-4">
+            <a 
+              href="https://groupme.com/join_group/22175371/aFdECd" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-3 bg-card rounded-xl p-4 shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-1"
+            >
+              <MessageCircle className="w-5 h-5 text-primary" />
+              <span className="font-display text-sm font-bold text-foreground uppercase tracking-wide">
+                Parent GroupMe
+              </span>
+            </a>
+            <a 
+              href="https://discord.gg/r4nfrSN7" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-3 bg-card rounded-xl p-4 shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-1"
+            >
+              <MessageCircle className="w-5 h-5 text-primary" />
+              <span className="font-display text-sm font-bold text-foreground uppercase tracking-wide">
+                Player Discord
+              </span>
+            </a>
           </div>
 
           <div className="mt-12 text-center">
