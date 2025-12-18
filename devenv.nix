@@ -8,4 +8,11 @@
     enable = true;
     npm.enable = true;
   };
+  packages = with pkgs; [
+    pre-commit
+    biome
+  ];
+  scripts.check.exec = ''
+    pre-commit run --all-files
+  '';
 }
