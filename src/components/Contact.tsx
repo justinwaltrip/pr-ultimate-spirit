@@ -41,7 +41,7 @@ const Contact = () => {
 						</Button>
 					</div>
 
-					<div className="grid md:grid-cols-2 gap-8">
+					<div className="grid md:grid-cols-3 gap-8">
 						{/* Coach Contact */}
 						<div className="bg-card rounded-2xl p-8 shadow-card">
 							<div className="flex items-center gap-4 mb-6">
@@ -56,6 +56,24 @@ const Contact = () => {
 								</div>
 							</div>
 							<Button variant="hero" className="w-full" asChild>
+								<a href="mailto:prultimatecoaches@gmail.com">Contact</a>
+							</Button>
+						</div>
+
+						{/* Captains Contact */}
+						<div className="bg-card rounded-2xl p-8 shadow-card">
+							<div className="flex items-center gap-4 mb-6">
+								<div className="w-12 h-12 rounded-full gradient-primary flex items-center justify-center">
+									<Users className="w-6 h-6 text-primary-foreground" />
+								</div>
+								<div>
+									<h3 className="font-display text-lg font-bold text-foreground uppercase tracking-wide">
+										Captains
+									</h3>
+									<p className="text-muted-foreground">Nolan Jackson & Bobby Ross</p>
+								</div>
+							</div>
+							<Button variant="outline" className="w-full" asChild>
 								<a href="mailto:prultimatecoaches@gmail.com">Contact</a>
 							</Button>
 						</div>
@@ -79,30 +97,24 @@ const Contact = () => {
 						</div>
 					</div>
 
-					{/* Community Links */}
-					<div className="mt-8 grid md:grid-cols-2 gap-4">
-						<a
-							href="https://groupme.com/join_group/22175371/aFdECd"
-							target="_blank"
-							rel="noopener noreferrer"
-							className="flex items-center justify-center gap-3 bg-card rounded-xl p-4 shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-1"
-						>
+					{/* Community Links Info */}
+					<div className="mt-8 bg-card rounded-xl p-6 shadow-card text-center">
+						<div className="flex items-center justify-center gap-3 mb-3">
 							<MessageCircle className="w-5 h-5 text-primary" />
 							<span className="font-display text-sm font-bold text-foreground uppercase tracking-wide">
-								Parent GroupMe
+								Parent GroupMe & Player Discord
 							</span>
-						</a>
-						<a
-							href="https://discord.gg/r4nfrSN7"
-							target="_blank"
-							rel="noopener noreferrer"
-							className="flex items-center justify-center gap-3 bg-card rounded-xl p-4 shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-1"
-						>
-							<MessageCircle className="w-5 h-5 text-primary" />
-							<span className="font-display text-sm font-bold text-foreground uppercase tracking-wide">
-								Player Discord
-							</span>
-						</a>
+						</div>
+						<p className="text-muted-foreground text-sm">
+							Contact us at{" "}
+							<a
+								href="mailto:prultimatecoaches@gmail.com"
+								className="text-primary hover:underline font-medium"
+							>
+								prultimatecoaches@gmail.com
+							</a>{" "}
+							for invites to our community groups.
+						</p>
 					</div>
 
 					<div className="mt-12 text-center">
