@@ -1,4 +1,4 @@
-import { Mail, Users } from "lucide-react";
+import { ExternalLink, Mail, MessageCircle, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Contact = () => {
@@ -20,44 +20,82 @@ const Contact = () => {
 						</p>
 					</div>
 
-					<div className="grid md:grid-cols-2 gap-8">
-						{/* Coach Contact */}
-						<div className="bg-card rounded-2xl p-8 shadow-card">
-							<div className="flex items-center gap-4 mb-6">
-								<div className="w-12 h-12 rounded-full gradient-primary flex items-center justify-center">
+					{/* Registration Info */}
+					<div className="bg-primary/10 border border-primary/20 rounded-2xl p-6 mb-8 text-center">
+						<h3 className="font-display text-lg font-bold text-foreground uppercase tracking-wide mb-2">
+							Registration Required
+						</h3>
+						<p className="text-muted-foreground mb-4">
+							All players need a Pittsburgh Ultimate membership. Sign up before
+							December 31 for $12 (or $16 in January).
+						</p>
+						<Button variant="hero" asChild>
+							<a
+								href="https://pittsburgh-ultimate.org"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Register at pittsburgh-ultimate.org{" "}
+								<ExternalLink className="w-4 h-4 ml-2" />
+							</a>
+						</Button>
+					</div>
+
+					{/* Team Leadership */}
+					<div className="bg-card rounded-2xl p-8 shadow-card mb-8">
+						<div className="grid md:grid-cols-3 gap-6 mb-8">
+							<div className="text-center">
+								<div className="w-12 h-12 rounded-full gradient-primary flex items-center justify-center mx-auto mb-3">
 									<Mail className="w-6 h-6 text-primary-foreground" />
 								</div>
-								<div>
-									<h3 className="font-display text-lg font-bold text-foreground uppercase tracking-wide">
-										Coach
-									</h3>
-									<p className="text-muted-foreground">Justin Waltrip</p>
-								</div>
+								<h3 className="font-display text-lg font-bold text-foreground uppercase tracking-wide">
+									Coach
+								</h3>
+								<p className="text-muted-foreground">Justin Waltrip</p>
 							</div>
-							<Button variant="hero" className="w-full" asChild>
-								<a href="mailto:prultimatecoaches@gmail.com">Contact Coach</a>
-							</Button>
-						</div>
 
-						{/* Team Captains */}
-						<div className="bg-card rounded-2xl p-8 shadow-card">
-							<div className="flex items-center gap-4 mb-6">
-								<div className="w-12 h-12 rounded-full gradient-primary flex items-center justify-center">
+							<div className="text-center">
+								<div className="w-12 h-12 rounded-full gradient-primary flex items-center justify-center mx-auto mb-3">
 									<Users className="w-6 h-6 text-primary-foreground" />
 								</div>
-								<div>
-									<h3 className="font-display text-lg font-bold text-foreground uppercase tracking-wide">
-										Team Captains
-									</h3>
-									<p className="text-muted-foreground">
-										Nolan Jackson & Bobby Ross
-									</p>
-								</div>
+								<h3 className="font-display text-lg font-bold text-foreground uppercase tracking-wide">
+									Captains
+								</h3>
+								<p className="text-muted-foreground">
+									Nolan Jackson & Bobby Ross
+								</p>
 							</div>
-							<Button variant="outline" className="w-full" asChild>
-								<a href="mailto:prultimatecoaches@gmail.com">Get in Touch</a>
-							</Button>
+
+							<div className="text-center">
+								<div className="w-12 h-12 rounded-full gradient-primary flex items-center justify-center mx-auto mb-3">
+									<Users className="w-6 h-6 text-primary-foreground" />
+								</div>
+								<h3 className="font-display text-lg font-bold text-foreground uppercase tracking-wide">
+									Parent Helper
+								</h3>
+								<p className="text-muted-foreground">Catherine Fletcher</p>
+							</div>
 						</div>
+
+						<Button variant="hero" className="w-full" asChild>
+							<a href="mailto:prultimatecoaches@gmail.com">
+								<Mail className="w-4 h-4 mr-2" />
+								Contact Us
+							</a>
+						</Button>
+					</div>
+
+					{/* Community Links Info */}
+					<div className="bg-card rounded-xl p-6 shadow-card text-center">
+						<div className="flex items-center justify-center gap-3 mb-3">
+							<MessageCircle className="w-5 h-5 text-primary" />
+							<span className="font-display text-sm font-bold text-foreground uppercase tracking-wide">
+								Parent GroupMe & Player Discord
+							</span>
+						</div>
+						<p className="text-muted-foreground text-sm">
+							Contact us for invites to our community groups.
+						</p>
 					</div>
 
 					<div className="mt-12 text-center">

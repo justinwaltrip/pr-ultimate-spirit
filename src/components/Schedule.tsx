@@ -16,12 +16,15 @@ const seasons = [
 		details: [
 			{
 				label: "Practice",
-				value: "Tuesdays 4:30 PM - 6:00 PM at Richland Elementary Gym",
+				value: "Tuesdays 4:30-6:00 PM at Richland Elementary Gym (Jan-Feb)",
 			},
-			{ label: "Winter League", value: "Wednesdays 5:00 PM - 5:30 PM" },
 			{
-				label: "League Location",
-				value: "AHN Montour Health & Sports Medicine Center",
+				label: "Games",
+				value: "Wednesdays 4:00-5:30 PM at AHN Montour Junction Sports Complex",
+			},
+			{
+				label: "Conditioning",
+				value: "Thursdays 4:00-5:30 PM at High School (Athletic Lobby)",
 			},
 		],
 	},
@@ -29,8 +32,11 @@ const seasons = [
 		name: "Spring Season",
 		icon: "🌸",
 		details: [
-			{ label: "Schedule", value: "TBD - Typically similar to Fall schedule" },
-			{ label: "Updates", value: "Check back for announcements" },
+			{
+				label: "Tournament",
+				value: "Queen City Tune Up - April 11-12 in Charlotte, NC",
+			},
+			{ label: "Schedule", value: "TBD - Check back for announcements" },
 		],
 	},
 ];
