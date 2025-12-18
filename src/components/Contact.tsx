@@ -56,7 +56,7 @@ const Contact = () => {
 								</div>
 							</div>
 							<Button variant="hero" className="w-full" asChild>
-								<a href="mailto:prultimatecoaches@gmail.com">Contact Coach</a>
+								<a href="mailto:prultimatecoaches@gmail.com">Contact</a>
 							</Button>
 						</div>
 
@@ -74,7 +74,7 @@ const Contact = () => {
 								</div>
 							</div>
 							<Button variant="outline" className="w-full" asChild>
-								<a href="mailto:cgfletcher1225@gmail.com">Contact Catherine</a>
+								<a href="mailto:prultimatecoaches@gmail.com">Contact</a>
 							</Button>
 						</div>
 					</div>
