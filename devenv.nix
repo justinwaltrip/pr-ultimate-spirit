@@ -12,7 +12,12 @@
     pre-commit
     biome
   ];
-  scripts.check.exec = ''
-    pre-commit run --all-files
-  '';
+  scripts = {
+    check.exec = ''
+      pre-commit run --all-files
+    '';
+    dev.exec = ''
+      npm run dev
+    '';
+  };
 }

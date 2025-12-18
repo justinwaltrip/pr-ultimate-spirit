@@ -61,7 +61,9 @@ const Contact = () => {
 								<h3 className="font-display text-lg font-bold text-foreground uppercase tracking-wide">
 									Captains
 								</h3>
-								<p className="text-muted-foreground">Nolan Jackson & Bobby Ross</p>
+								<p className="text-muted-foreground">
+									Nolan Jackson & Bobby Ross
+								</p>
 							</div>
 
 							<div className="text-center">
