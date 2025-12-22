@@ -1,29 +1,29 @@
-import { HelpCircle, Shirt, Footprints, Package, BookOpen } from "lucide-react";
+import { BookOpen, Footprints, Package, Shirt } from "lucide-react";
 
 const faqs = [
 	{
 		icon: Footprints,
 		question: "What kind of shoes should players wear?",
 		answer:
-			"For outdoor grass fields, soccer cleats or football cleats work great. For indoor winter games at turf facilities, turf shoes or indoor soccer shoes are recommended. Avoid metal cleats on turf surfaces.",
+			"Soccer, lacrosse, or football cleats work great for outdoor grass or indoor turf fields. For indoor conditioning or winter sessions at gymnasiums, athletic tennis shoes or cross-trainers are recommended. Avoid anything with metal spikes.",
 	},
 	{
 		icon: Shirt,
 		question: "How do I order a team jersey?",
 		answer:
-			"Jersey orders are typically placed in early December before the winter season. If you missed the ordering window, please contact us at prultimatecoaches@gmail.com and we'll help you get a jersey for your player.",
+			"Jersey orders are typically placed in early December before the winter season. Jerseys aren't required for participation and we have extra jerseys available for use during games if needed.",
 	},
 	{
 		icon: Package,
 		question: "What equipment is needed?",
 		answer:
-			"Players should bring: comfortable athletic clothing, appropriate footwear (see above), a water bottle, and weather-appropriate layers. The team provides discs for practice and games. Optional: athletic gloves for cold weather play.",
+			"Players should bring: a white and a dark-colored shirt (avoid light-gray), comfortable athletic shorts, appropriate footwear (see above), a water bottle, and weather-appropriate layers. The team provides discs for practice and games. Optional: athletic gloves for cold weather play.",
 	},
 	{
 		icon: BookOpen,
 		question: "What are the basic rules of ultimate frisbee?",
 		answer:
-			"Ultimate is a non-contact sport played with a flying disc. Teams score by catching the disc in the opponent's end zone. Players cannot run with the disc—they must throw it within 10 seconds. Turnovers occur on incomplete passes, interceptions, or out-of-bounds throws. Ultimate is self-officiated based on 'Spirit of the Game.'",
+			"Ultimate is a non-contact sport played with a flying disc. Teams score by catching the disc in the opponent's end zone. Players cannot run with the disc—they must throw it within 10 seconds. Turnovers occur on incomplete passes, interceptions, or out-of-bounds throws. Ultimate is self-officiated based on 'Spirit of the Game.' For a comprehensive overview of the rules, please visit the USA Ultimate official rules page at usaultimate.org/rules.",
 	},
 ];
 
