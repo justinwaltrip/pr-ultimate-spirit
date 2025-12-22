@@ -18,7 +18,7 @@ const Footer = () => {
 						Spirit of the Game • Teamwork • Excellence
 					</p>
 
-					<div className="flex justify-center gap-8 mb-8">
+					<div className="flex flex-wrap justify-center gap-6 md:gap-8 mb-8">
 						<a
 							href="#about"
 							className="text-sm text-white/70 hover:text-white transition-colors"
@@ -42,6 +42,12 @@ const Footer = () => {
 							className="text-sm text-white/70 hover:text-white transition-colors"
 						>
 							Calendar
+						</a>
+						<a
+							href="#faq"
+							className="text-sm text-white/70 hover:text-white transition-colors"
+						>
+							FAQ
 						</a>
 						<a
 							href="#contact"
