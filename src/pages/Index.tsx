@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import History from "@/components/History";
+import News from "@/components/News";
 import Schedule from "@/components/Schedule";
 
 const Index = () => {
@@ -15,6 +16,7 @@ const Index = () => {
 			<Hero />
 			<About />
 			<History />
+			<News />
 			<Schedule />
 			<Calendar />
 			<FAQ />
