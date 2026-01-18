@@ -4,6 +4,7 @@ const newsItems = [
 	{
 		title: "Pine-Richland grads on both sides of Pitt-Penn State rivalry at ultimate frisbee nationals",
 		source: "TribLive HSSN",
+		date: "May 26, 2024",
 		url: "https://tribhssn.triblive.com/pine-richland-grads-on-both-sides-of-pitt-penn-state-rivalry-at-ultimate-frisbee-nationals/",
 	},
 ];
@@ -35,9 +36,15 @@ const News = () => {
 									<Newspaper className="w-6 h-6 text-primary" />
 								</div>
 								<div className="flex-1">
-									<span className="text-xs uppercase tracking-wider text-muted-foreground mb-2 block">
-										{item.source}
-									</span>
+									<div className="flex items-center gap-2 mb-2">
+										<span className="text-xs uppercase tracking-wider text-muted-foreground">
+											{item.source}
+										</span>
+										<span className="text-xs text-muted-foreground">•</span>
+										<span className="text-xs text-muted-foreground">
+											{item.date}
+										</span>
+									</div>
 									<h3 className="font-display text-lg font-bold text-foreground group-hover:text-primary transition-colors leading-snug">
 										{item.title}
 									</h3>
