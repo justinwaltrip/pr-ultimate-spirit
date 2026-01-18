@@ -24,7 +24,7 @@ const seasons = [
 			},
 			{
 				label: "Conditioning",
-				value: "Thursdays 4:00-5:30 PM at High School (Athletic Lobby)",
+				value: "Thursdays 3:00-4:30 PM at High School (Athletic Lobby)",
 			},
 		],
 	},
