@@ -23,8 +23,8 @@ const seasons = [
 				value: "Wednesdays 4:00-5:30 PM at AHN Montour Junction Sports Complex",
 			},
 			{
-				label: "Conditioning",
-				value: "Thursdays 3:00-4:30 PM at High School (Athletic Lobby)",
+		label: "Conditioning",
+			value: "Thursdays 4:00-5:30 PM at High School (Athletic Lobby)",
 			},
 		],
 	},
