@@ -10,9 +10,11 @@ const Header = () => {
 	const navLinks = [
 		{ href: "#about", label: "About" },
 		{ href: "#history", label: "History" },
+		{ href: "#summer", label: "Summer" },
 		{ href: "#schedule", label: "Schedule" },
 		{ href: "#calendar", label: "Calendar" },
 		{ href: "#faq", label: "FAQ" },
+		{ href: "#resources", label: "Resources" },
 		{ href: "#contact", label: "Contact" },
 	];
 

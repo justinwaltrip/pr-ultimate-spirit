@@ -26,8 +26,7 @@ const Contact = () => {
 							Registration Required
 						</h3>
 						<p className="text-muted-foreground mb-4">
-							All players need a Pittsburgh Ultimate membership. Sign up before
-							December 31 for $12 (or $16 in January).
+							All players need a Pittsburgh Ultimate membership.
 						</p>
 						<Button variant="hero" asChild>
 							<a

@@ -7,7 +7,9 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import History from "@/components/History";
 import News from "@/components/News";
+import Resources from "@/components/Resources";
 import Schedule from "@/components/Schedule";
+import SummerOpportunities from "@/components/SummerOpportunities";
 
 const Index = () => {
 	return (
@@ -17,9 +19,11 @@ const Index = () => {
 			<About />
 			<History />
 			<News />
+			<SummerOpportunities />
 			<Schedule />
 			<Calendar />
 			<FAQ />
+			<Resources />
 			<Contact />
 			<Footer />
 		</main>

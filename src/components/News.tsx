@@ -1,8 +1,9 @@
-import { Newspaper, ExternalLink } from "lucide-react";
+import { ExternalLink, Newspaper } from "lucide-react";
 
 const newsItems = [
 	{
-		title: "Pine-Richland grads on both sides of Pitt-Penn State rivalry at ultimate frisbee nationals",
+		title:
+			"Pine-Richland grads on both sides of Pitt-Penn State rivalry at ultimate frisbee nationals",
 		source: "TribLive HSSN",
 		date: "May 26, 2024",
 		url: "https://tribhssn.triblive.com/pine-richland-grads-on-both-sides-of-pitt-penn-state-rivalry-at-ultimate-frisbee-nationals/",

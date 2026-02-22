@@ -38,7 +38,7 @@ const History = () => {
 					<div className="grid grid-cols-2 gap-6">
 						<div className="bg-card rounded-2xl p-8 shadow-card text-center">
 							<span className="block font-display text-4xl md:text-5xl font-bold text-gradient mb-2">
-								2x
+								3x
 							</span>
 							<span className="font-display text-sm uppercase tracking-wider text-muted-foreground">
 								PHUL Champions
