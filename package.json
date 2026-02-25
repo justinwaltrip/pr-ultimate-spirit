@@ -1,8 +1,33 @@
 {
-	"name": "vite_react_shadcn_ts",
-	"private": true,
-	"version": "0.0.0",
+	"name": "pr-ultimate-spirit",
+	"version": "1.0.0",
+	"description": "Modern, responsive team website template for Ultimate Frisbee programs. Built with React, TypeScript, and Tailwind CSS. Easily forkable for your own team.",
+	"private": false,
 	"type": "module",
+	"keywords": [
+		"ultimate-frisbee",
+		"ultimate",
+		"sports",
+		"team-website",
+		"website-template",
+		"pine-richland",
+		"react",
+		"typescript",
+		"vite",
+		"tailwind",
+		"shadcn-ui",
+		"sports-template"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/justinwaltrip/pr-ultimate-spirit.git"
+	},
+	"bugs": {
+		"url": "https://github.com/justinwaltrip/pr-ultimate-spirit/issues"
+	},
+	"homepage": "https://github.com/justinwaltrip/pr-ultimate-spirit#readme",
+	"license": "MIT",
+	"author": "Pine-Richland Ultimate",
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
