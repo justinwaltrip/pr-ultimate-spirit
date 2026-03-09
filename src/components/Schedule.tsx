@@ -32,11 +32,18 @@ const seasons = [
 		name: "Spring Season",
 		icon: "🌸",
 		details: [
+			{ label: "Days", value: "Monday, Wednesday, and Thursday" },
+			{ label: "Time", value: "4:00 PM - 6:00 PM" },
+			{ label: "Location", value: "Eden Hall Field" },
+			{
+				label: "Games",
+				value:
+					"Games are held during the week in place of practices — see the calendar for specific dates.",
+			},
 			{
 				label: "Tournament",
 				value: "Queen City Tune Up - April 11-12 in Charlotte, NC",
 			},
-			{ label: "Schedule", value: "TBD - Check back for announcements" },
 		],
 	},
 ];
@@ -108,6 +115,19 @@ const Schedule = () => {
 					</div>
 					<p className="text-muted-foreground">
 						Eden Hall Upper Elementary Soccer Field
+					</p>
+				</div>
+
+				<div className="mt-8 text-center">
+					<p className="text-muted-foreground">
+						For the most up-to-date information on practices, games, and events,{" "}
+						<a
+							href="#calendar"
+							className="text-primary font-semibold hover:underline"
+						>
+							check the calendar
+						</a>
+						.
 					</p>
 				</div>
 			</div>
