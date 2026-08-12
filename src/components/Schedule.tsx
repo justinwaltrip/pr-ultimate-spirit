@@ -1,18 +1,31 @@
-import { Calendar, Clock, MapPin } from "lucide-react";
+import { Calendar, Clock, Info, MapPin } from "lucide-react";
 
 const seasons = [
 	{
 		name: "Fall Season",
 		icon: "🍂",
 		details: [
-			{ label: "Days", value: "Monday, Wednesday, and Thursday" },
+			{ label: "Days", value: "Monday, Wednesday, Thursday" },
 			{ label: "Time", value: "4:00 PM - 6:00 PM" },
-			{ label: "Location", value: "Eden Hall Upper Elementary Soccer Field" },
+			{
+				label: "Dates",
+				value: "August 26 – November 30, 2026",
+			},
+			{
+				label: "Location",
+				value: "Pine-Richland HS, Softball Field & Field #2",
+			},
+			{
+				label: "Note",
+				value:
+					"Tuesdays reserved for potential games. Softball uses the outfield Tuesdays and Thursdays through October 1.",
+			},
 		],
 	},
 	{
 		name: "Winter Season",
 		icon: "❄️",
+		past: true,
 		details: [
 			{
 				label: "Practice",
@@ -31,6 +44,7 @@ const seasons = [
 	{
 		name: "Spring Season",
 		icon: "🌸",
+		past: true,
 		details: [
 			{
 				label: "Tournament",
@@ -69,17 +83,25 @@ const Schedule = () => {
 								<h3 className="font-display text-xl font-bold text-primary-foreground uppercase tracking-wide">
 									{season.name}
 								</h3>
+								{season.past && (
+									<span className="inline-block mt-2 px-2 py-0.5 text-[10px] uppercase tracking-wider font-bold bg-primary-foreground/20 text-primary-foreground rounded">
+										Last Season
+									</span>
+								)}
 							</div>
 							<div className="p-6 space-y-4">
 								{season.details.map((detail) => (
 									<div key={detail.label} className="flex items-start gap-3">
 										<div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
 											{detail.label === "Days" ||
+											detail.label === "Dates" ||
 											detail.label === "Schedule" ||
 											detail.label === "Practice" ? (
 												<Calendar className="w-3 h-3 text-primary" />
 											) : detail.label.includes("Location") ? (
 												<MapPin className="w-3 h-3 text-primary" />
+											) : detail.label === "Note" ? (
+												<Info className="w-3 h-3 text-primary" />
 											) : (
 												<Clock className="w-3 h-3 text-primary" />
 											)}
@@ -107,7 +129,9 @@ const Schedule = () => {
 						</span>
 					</div>
 					<p className="text-muted-foreground">
-						Eden Hall Upper Elementary Soccer Field
+						Pine-Richland High School
+						<br />
+						200 Warrendale Rd, Gibsonia, PA 15044
 					</p>
 				</div>
 			</div>

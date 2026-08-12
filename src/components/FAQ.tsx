@@ -23,7 +23,7 @@ const faqs = [
 		icon: BookOpen,
 		question: "What are the basic rules of ultimate frisbee?",
 		answer:
-			"Ultimate is a non-contact sport played with a flying disc. Teams score by catching the disc in the opponent's end zone. Players cannot run with the disc—they must throw it within 10 seconds. Turnovers occur on incomplete passes, interceptions, or out-of-bounds throws. Ultimate is self-officiated based on 'Spirit of the Game.'",
+			"Ultimate is a non-contact sport played with a flying disc. Teams score by catching the disc in the opponent's end zone. Players cannot run with the disc; they must throw it within 10 seconds. Turnovers occur on incomplete passes, interceptions, or out-of-bounds throws. Ultimate is self-officiated based on 'Spirit of the Game.'",
 		link: {
 			text: "USA Ultimate official rules",
 			url: "https://usaultimate.org/rules/",
