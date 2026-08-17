@@ -1,4 +1,4 @@
-import { ExternalLink, Mail, MessageCircle, Users } from "lucide-react";
+import { Mail, MessageCircle, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Contact = () => {
@@ -20,24 +20,15 @@ const Contact = () => {
 						</p>
 					</div>
 
-					{/* Registration Info */}
+					{/* Clinic and practice access */}
 					<div className="bg-primary/10 border border-primary/20 rounded-2xl p-6 mb-8 text-center">
 						<h3 className="font-display text-lg font-bold text-foreground uppercase tracking-wide mb-2">
-							Registration Required
+							No Registration Required
 						</h3>
-						<p className="text-muted-foreground mb-4">
-							All players need a Pittsburgh Ultimate membership.
+						<p className="text-muted-foreground">
+							No registration is required to attend the new player clinic or
+							regular practices. Come give ultimate a try!
 						</p>
-						<Button variant="hero" asChild>
-							<a
-								href="https://pittsburgh-ultimate.org"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								Register at pittsburgh-ultimate.org{" "}
-								<ExternalLink className="w-4 h-4 ml-2" />
-							</a>
-						</Button>
 					</div>
 
 					{/* Team Leadership */}
@@ -61,7 +52,7 @@ const Contact = () => {
 									Captains
 								</h3>
 								<p className="text-muted-foreground">
-									Nolan Jackson & Bobby Ross
+									Jacob Simon & Bobby Ross
 								</p>
 							</div>
 
