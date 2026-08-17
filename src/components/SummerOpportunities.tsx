@@ -48,13 +48,13 @@ const SummerOpportunities = () => {
 		>
 			<div className="container mx-auto px-4">
 				<div className="max-w-3xl mx-auto text-center mb-16">
-					<span className="inline-block font-display text-sm uppercase tracking-[0.2em] text-primary mb-4">
-						Beyond the Season
+					<span className="inline-block font-display text-sm uppercase tracking-[0.2em] text-muted-foreground mb-4">
+						Last Season
 					</span>
-					<h2 className="font-display text-3xl md:text-5xl font-bold text-foreground uppercase tracking-wide mb-6">
+					<h2 className="font-display text-3xl md:text-5xl font-bold text-muted-foreground uppercase tracking-wide mb-6">
 						Summer Opportunities
 					</h2>
-					<p className="text-base sm:text-lg text-muted-foreground leading-relaxed px-2 sm:px-0">
+					<p className="text-base sm:text-lg text-muted-foreground/70 leading-relaxed px-2 sm:px-0">
 						Take your game to the next level with tournaments, travel teams,
 						camps, and pathways to college ultimate.
 					</p>

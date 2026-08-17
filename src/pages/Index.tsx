@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import History from "@/components/History";
 import News from "@/components/News";
+import RecruitmentBanner from "@/components/RecruitmentBanner";
 import Resources from "@/components/Resources";
 import Schedule from "@/components/Schedule";
 import SummerOpportunities from "@/components/SummerOpportunities";
@@ -15,14 +16,15 @@ const Index = () => {
 	return (
 		<main className="min-h-screen">
 			<Header />
+			<RecruitmentBanner />
 			<Hero />
+			<Schedule />
 			<About />
 			<History />
 			<News />
-			<SummerOpportunities />
-			<Schedule />
 			<Calendar />
 			<FAQ />
+			<SummerOpportunities />
 			<Resources />
 			<Contact />
 			<Footer />
