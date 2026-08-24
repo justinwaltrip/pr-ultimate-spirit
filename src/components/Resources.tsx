@@ -161,6 +161,42 @@ const Resources = () => {
 							</AccordionTrigger>
 							<AccordionContent className="px-6 pb-6">
 								<div className="space-y-4 text-sm text-muted-foreground leading-relaxed">
+									<div className="bg-primary/10 border border-primary/20 rounded-xl p-4 space-y-3">
+										<h4 className="font-semibold text-foreground">
+											Fall 2026 League Registration
+										</h4>
+										<ol className="list-decimal list-inside space-y-1 ml-2">
+											<li>
+												Go to{" "}
+												<a
+													href="https://pittsburgh-ultimate.org"
+													target="_blank"
+													rel="noopener noreferrer"
+													className="text-primary hover:underline font-medium"
+												>
+													pittsburgh-ultimate.org
+												</a>{" "}
+												and find the 2026 Fall High School League
+											</li>
+											<li>Select register and continue through the process</li>
+											<li>
+												A winter 2026 membership already covers the fall season,
+												so you don't need to purchase another one
+											</li>
+											<li>
+												Each player does need to complete a new waiver for the
+												fall season
+											</li>
+										</ol>
+										<a
+											href="https://pittsburgh-ultimate.org/e/2026-fall-high-school-league/register"
+											target="_blank"
+											rel="noopener noreferrer"
+											className="text-primary hover:underline font-medium"
+										>
+											Register for the 2026 Fall High School League →
+										</a>
+									</div>
 									<div>
 										<h4 className="font-semibold text-foreground mb-2">
 											Chaperone Responsibilities
