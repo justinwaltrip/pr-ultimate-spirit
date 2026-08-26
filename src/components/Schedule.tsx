@@ -9,7 +9,7 @@ const seasons = [
 			{ label: "Time", value: "4:00 PM - 6:00 PM" },
 			{
 				label: "Dates",
-				value: "August 31 – November 30, 2026",
+				value: "September 2 – November 30, 2026",
 			},
 			{
 				label: "Clinic",
