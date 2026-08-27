@@ -205,6 +205,26 @@
   animation-delay: 300ms;
 }
 
-.animate-delay-400 {
-  animation-delay: 400ms;
-}
+  .animate-delay-400 {
+    animation-delay: 400ms;
+  }
+
+  .no-print {
+    display: block;
+  }
+
+  @media print {
+    body {
+      background: transparent;
+    }
+
+    .no-print {
+      display: none !important;
+    }
+
+    .flyer-sheet {
+      width: 100%;
+      min-height: auto;
+      border-radius: 0;
+    }
+  }
