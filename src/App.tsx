@@ -6,6 +6,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import ClinicFlyer from "./pages/ClinicFlyer";
 import Index from "./pages/Index";
+import InfoSessionFlyer from "./pages/InfoSessionFlyer";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -20,6 +21,7 @@ const App = () => (
 					<Routes>
 						<Route path="/" element={<Index />} />
 						<Route path="/flyer" element={<ClinicFlyer />} />
+						<Route path="/flyer/info-session" element={<InfoSessionFlyer />} />
 						{/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
 						<Route path="*" element={<NotFound />} />
 					</Routes>
