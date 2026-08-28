@@ -46,10 +46,9 @@ const InfoSessionFlyer = () => {
 								<span className="block text-4xl md:text-5xl">Info Session</span>
 							</h1>
 							<p className="mt-4 max-w-md text-lg text-muted-foreground">
-								Thinking about playing ultimate frisbee this fall? Come
-								get the full
-								story of our team, program, and season, before
-								practice kicks off.
+								Thinking about playing ultimate frisbee this fall? Come get the
+								full story of our team, program, and season, before practice
+								kicks off.
 							</p>
 						</div>
 
@@ -115,9 +114,7 @@ const InfoSessionFlyer = () => {
 								{highlights.map((item) => (
 									<li key={item} className="flex items-start gap-2.5">
 										<CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
-										<span className="text-base leading-snug">
-											{item}
-										</span>
+										<span className="text-base leading-snug">{item}</span>
 									</li>
 								))}
 							</ul>
@@ -132,13 +129,11 @@ const InfoSessionFlyer = () => {
 									September 3
 								</span>
 								, and Fall season practices start{" "}
-							<span className="font-semibold text-foreground">
-								September 2
-							</span>{" "}
-							- Monday, Wednesday &
-							Thursday 4:00-6:00 PM at Pine-Richland High School.
-							No tryouts,
-								no pressure.{" "}
+								<span className="font-semibold text-foreground">
+									September 2
+								</span>{" "}
+								- Monday, Wednesday & Thursday 4:00-6:00 PM at Pine-Richland
+								High School. No tryouts, no pressure.{" "}
 								<span className="font-semibold text-foreground">
 									All skill levels welcome.
 								</span>

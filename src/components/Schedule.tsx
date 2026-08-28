@@ -163,7 +163,7 @@ const Schedule = () => {
 					<p className="text-muted-foreground">
 						Pine-Richland High School
 						<br />
-						200 Warrendale Rd, Gibsonia, PA 15044
+						702 Warrendale Rd, Gibsonia, PA 15044
 					</p>
 				</div>
 			</div>

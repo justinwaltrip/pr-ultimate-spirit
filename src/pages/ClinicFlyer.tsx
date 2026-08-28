@@ -88,7 +88,7 @@ const ClinicFlyer = () => {
 							<p className="mt-1 text-sm text-muted-foreground">
 								Softball Field & Field #2
 								<br />
-								200 Warrendale Rd, Gibsonia, PA 15044
+								702 Warrendale Rd, Gibsonia, PA 15044
 							</p>
 						</div>
 						<div className="bg-card p-5">
