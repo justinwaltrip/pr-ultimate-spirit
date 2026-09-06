@@ -1,11 +1,11 @@
 import {
 	CalendarDays,
 	Clock,
+	Download,
 	MapPin,
 	Package,
 	Scale,
 	Users,
-	Download,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -41,7 +41,8 @@ const waysToHelp = [
 		title: "Volunteer to Unload",
 		description:
 			"We need to help unload the cars of donations. We're looking for at least 3 folks to pitch in for about an hour during the 3:30–5:30 window.",
-		detail: "One hour helps more than you'd think. Grab a friend and show up to the Gibsonia store.",
+		detail:
+			"One hour helps more than you'd think. Grab a friend and show up to the Gibsonia store.",
 	},
 	{
 		icon: Package,
@@ -67,13 +68,16 @@ const Fundraiser = () => {
 						Goodwill Fundraiser
 					</h2>
 					<p className="text-base sm:text-lg text-muted-foreground leading-relaxed px-2 sm:px-0">
-						Help us raise money for the team while decluttering your
-						home. Every item Goodwill accepts gets weighed, and we earn a
-						share of its value, so the scale is in your favor.
+						Help us raise money for the team while decluttering your home. Every
+						item Goodwill accepts gets weighed, and we earn a share of its
+						value, so the scale is in your favor.
 					</p>
 					<div className="mt-8">
 						<Button variant="hero" asChild className="gap-2">
-							<a href="/goodwill-fundraiser.ics" download="goodwill-fundraiser.ics">
+							<a
+								href="/goodwill-fundraiser.ics"
+								download="goodwill-fundraiser.ics"
+							>
 								<Download className="w-4 h-4" />
 								Add to Calendar
 							</a>

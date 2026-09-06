@@ -26,8 +26,8 @@ const Contact = () => {
 							No Registration Required
 						</h3>
 						<p className="text-muted-foreground">
-						No registration is required to attend regular practices.
-						Come give ultimate a try!
+							No registration is required to attend regular practices. Come give
+							ultimate a try!
 						</p>
 					</div>
 
