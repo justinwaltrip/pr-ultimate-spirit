@@ -1,9 +1,10 @@
 import About from "@/components/About";
-// import Banner from "@/components/Banner"; // General-purpose announcement banner — uncomment below to use
+// import Banner from "@/components/Banner"; // General-purpose announcement banner; uncomment to use
 import Calendar from "@/components/Calendar";
 import Contact from "@/components/Contact";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
+import Fundraiser from "@/components/Fundraiser";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import History from "@/components/History";
@@ -25,6 +26,7 @@ const Index = () => {
 			/>
 			*/}
 			<Hero />
+			<Fundraiser />
 			<Schedule />
 			<About />
 			<History />

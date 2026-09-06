@@ -52,7 +52,7 @@ const seasons = [
 			{
 				label: "Games",
 				value:
-					"Games are held during the week in place of practices — see the calendar for specific dates.",
+					"Games are held during the week in place of practices. See the calendar for specific dates.",
 			},
 			{
 				label: "Tournament",

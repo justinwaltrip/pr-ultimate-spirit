@@ -4,7 +4,7 @@ Guidance for AI agents and contributors working in this repository.
 
 ## Project Overview
 
-**Pine-Richland Ultimate** — a modern, responsive, single-page team website for an Ultimate Frisbee program. It is open-source and designed to be forkable (see `README.md` for the fork guide).
+**Pine-Richland Ultimate** is a modern, responsive, single-page team website for an Ultimate Frisbee program. It is open-source and designed to be forkable (see `README.md` for the fork guide).
 
 - **Stack**: React 18 + TypeScript + Vite 7
 - **Styling**: Tailwind CSS 3 + shadcn/ui (Radix primitives)
@@ -46,7 +46,7 @@ src/
 
 - **Tabs for indentation** (see `biome.json`).
 - Feature components live in `src/components/` as PascalCase `.tsx` files, each default-exporting a single `const` component.
-- shadcn/ui primitives live in `src/components/ui/` — treat as vendored; edit with care.
+- shadcn/ui primitives live in `src/components/ui/`. Treat as vendored; edit with care.
 - Styling is Tailwind utility classes only; use the shadcn theme tokens (`bg-primary`, `text-foreground`, `bg-muted`, `text-accent`, etc.) rather than raw hex colors.
 - Icons are imported from `lucide-react`.
 - Path alias `@/` → `src/`.
@@ -80,7 +80,7 @@ interface BannerProps {
 }
 ```
 
-- `callToAction` is optional — pass `undefined` to omit the button.
+- `callToAction` is optional; pass `undefined` to omit the button.
 - `detail` accepts any `ReactNode`, so you can attach icons, pills, `<a>` links, etc.
 
 **Current usage**
@@ -89,7 +89,7 @@ The banner is currently **commented out** in `src/pages/Index.tsx` (right after 
 
 1. Un-comment the `<Banner …/>` block in `src/pages/Index.tsx`.
 2. Update `eyebrow`, `title`, `detail`, and `callToAction` with the new event's values.
-3. Leave the commented import line (`// import Banner from "@/components/Banner";`) as-is — it documents the file's intent.
+3. Leave the commented import line (`// import Banner from "@/components/Banner";`) as-is; it documents the file's intent.
 
 **Example (clinic announcement, as originally used)**
 
@@ -106,7 +106,7 @@ The banner is currently **commented out** in `src/pages/Index.tsx` (right after 
 
 - Fixed full-width section with `bg-primary` (theme primary) + `text-primary-foreground`.
 - Responsive layout: stacked on mobile, row with space-between on `md:`.
-- The CTA uses `<Button variant="secondary" size="lg">` — change the variant if a different emphasis is needed.
+- The CTA uses `<Button variant="secondary" size="lg">`. Change the variant if a different emphasis is needed.
 
 ## Lint Notes
 
