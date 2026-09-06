@@ -5,7 +5,9 @@ import {
 	Package,
 	Scale,
 	Users,
+	Download,
 } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const eventInfo = [
 	{
@@ -69,6 +71,14 @@ const Fundraiser = () => {
 						home. Every item Goodwill accepts gets weighed, and we earn a
 						share of its value, so the scale is in your favor.
 					</p>
+					<div className="mt-8">
+						<Button variant="hero" asChild className="gap-2">
+							<a href="/goodwill-fundraiser.ics" download="goodwill-fundraiser.ics">
+								<Download className="w-4 h-4" />
+								Add to Calendar
+							</a>
+						</Button>
+					</div>
 				</div>
 
 				{/* Event details bar */}
