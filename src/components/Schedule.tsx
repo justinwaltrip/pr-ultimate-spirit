@@ -12,11 +12,6 @@ const seasons = [
 				value: "August 31 – November 30, 2026",
 			},
 			{
-				label: "Clinic",
-				value:
-					"One-day new player clinic: September 3, 2026, 4:00 PM - 6:00 PM",
-			},
-			{
 				label: "Location",
 				value: "Pine-Richland HS, Softball Field & Field #2",
 			},
@@ -107,7 +102,6 @@ const Schedule = () => {
 										<div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
 											{detail.label === "Days" ||
 											detail.label === "Dates" ||
-											detail.label === "Clinic" ||
 											detail.label === "Schedule" ||
 											detail.label === "Practice" ? (
 												<Calendar className="w-3 h-3 text-primary" />

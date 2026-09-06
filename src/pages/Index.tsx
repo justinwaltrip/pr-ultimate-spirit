@@ -1,4 +1,5 @@
 import About from "@/components/About";
+// import Banner from "@/components/Banner"; // General-purpose announcement banner — uncomment below to use
 import Calendar from "@/components/Calendar";
 import Contact from "@/components/Contact";
 import FAQ from "@/components/FAQ";
@@ -7,7 +8,6 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import History from "@/components/History";
 import News from "@/components/News";
-import RecruitmentBanner from "@/components/RecruitmentBanner";
 import Resources from "@/components/Resources";
 import Schedule from "@/components/Schedule";
 import SummerOpportunities from "@/components/SummerOpportunities";
@@ -16,7 +16,14 @@ const Index = () => {
 	return (
 		<main className="min-h-screen">
 			<Header />
-			<RecruitmentBanner />
+			{/*
+			<Banner
+				eyebrow="New players welcome"
+				title="Try Ultimate at our one-day clinic"
+				detail="September 3, 2026 · 4:00-6:00 PM · Pine-Richland High School"
+				callToAction={{ label: "I'm interested", href: "#contact" }}
+			/>
+			*/}
 			<Hero />
 			<Schedule />
 			<About />

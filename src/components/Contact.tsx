@@ -20,14 +20,14 @@ const Contact = () => {
 						</p>
 					</div>
 
-					{/* Clinic and practice access */}
+					{/* Practice access */}
 					<div className="bg-primary/10 border border-primary/20 rounded-2xl p-6 mb-8 text-center">
 						<h3 className="font-display text-lg font-bold text-foreground uppercase tracking-wide mb-2">
 							No Registration Required
 						</h3>
 						<p className="text-muted-foreground">
-							No registration is required to attend the new player clinic or
-							regular practices. Come give ultimate a try!
+						No registration is required to attend regular practices.
+						Come give ultimate a try!
 						</p>
 					</div>
 
