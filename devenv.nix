@@ -12,6 +12,9 @@
   packages = with pkgs; [
     pre-commit
     biome
+    # Chromium for the screenshot helper. The script auto-detects this binary
+    # from PATH, so no browser download is needed in this shell.
+    chromium
   ];
   scripts = {
     check.exec = ''
@@ -19,6 +22,9 @@
     '';
     dev.exec = ''
       npm run dev
+    '';
+    screenshot.exec = ''
+      node scripts/screenshot.mjs "$@"
     '';
   };
 }

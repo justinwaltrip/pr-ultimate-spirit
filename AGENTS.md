@@ -14,16 +14,44 @@ Guidance for AI agents and contributors working in this repository.
 
 ## Scripts
 
-| Command              | Purpose                                  |
-| -------------------- | ---------------------------------------- |
-| `npm run dev`        | Vite dev server (hot reload)             |
-| `npm run build`      | Production build to `dist/`              |
-| `npm run build:dev`  | Vite build in development mode           |
-| `npm run preview`    | Preview the production build             |
-| `npm run lint`       | ESLint over the whole repo (`.`)         |
-| `npm run deploy`     | `gh-pages -d dist` (runs `predeploy`)    |
+| Command                 | Purpose                                              |
+| ----------------------- | ---------------------------------------------------- |
+| `npm run dev`           | Vite dev server (hot reload)                         |
+| `npm run build`         | Production build to `dist/`                          |
+| `npm run build:dev`     | Vite build in development mode                       |
+| `npm run preview`       | Preview the production build                         |
+| `npm run lint`          | ESLint over the whole repo (`.`)                     |
+| `npm run screenshot`    | Screenshot the site (see **Screenshot**)             |
+| `npm run screenshot:full` | Screenshot the full scrollable page                |
+| `npm run deploy`        | `gh-pages -d dist` (runs `predeploy`)                |
 
 There is no test suite or typecheck script in `package.json`. TypeScript is checked implicitly by `tsc` via the `vite` build; ESLint runs the TS parser.
+
+## Screenshot
+
+A reusable, dependency-light screenshot tool lives at `scripts/screenshot.mjs`
+(Playwright + Chromium). It builds and serves the site (unless a URL is given or
+`--skip-build` is passed) and writes a PNG to `screenshots/`.
+
+```bash
+npm run screenshot                          # build+serve this site, viewport shot
+npm run screenshot:full                     # full-page shot
+node scripts/screenshot.mjs http://localhost:4173      # screenshot any URL
+node scripts/screenshot.mjs 127.0.0.1:4173 --selector '#hero' --device mobile
+```
+
+Common flags: `-o, --output <file> · --full · -w/-h (px) · --selector <css> ·
+--wait <ms> · --dark · --reduced-motion · --device desktop|tablet|mobile ·
+--browser <path>`. Run with `-H` for full help.
+
+**Browser resolution.** The script picks the first that exists:
+`--browser`/`CHROMIUM_PATH`/`PLAYWRIGHT_CHROMIUM_EXECUTABLE` → a local
+Playwright-managed Chromium → a `chromium` binary on PATH. `devenv.nix` adds
+`chromium`, so inside the dev shell no browser download is needed. Outside the
+shell, run `npx playwright install chromium` once (set
+`PLAYWRIGHT_BROWSERS_PATH` if you use a custom cache).
+
+Output goes to `screenshots/` (git-ignored).
 
 ## Project Layout
 
