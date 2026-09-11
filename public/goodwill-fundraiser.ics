@@ -22,11 +22,11 @@ BEGIN:VEVENT
 UID:20260923-goodwill-fundraiser@prultimate
 DTSTAMP:20260906T120000Z
 DTSTART;TZID=America/New_York:20260923T153000
-DTEND;TZID=America/New_York:20260923T173000
+DTEND;TZID=America/New_York:20260923T183000
 SUMMARY:PR Ultimate Goodwill Fundraiser
 LOCATION:Goodwill Gibsonia Store
 DESCRIPTION:Bring pre-loved donated goods to be weighed for the PR Ultimate\,
-  team! Volunteers are needed to help unload donations (3:30-5:30 PM). Pre-drop-off accepted in advance.
+  team! Volunteers are needed to help unload donations (3:30-6:30 PM). Pre-drop-off accepted in advance.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Fundraiser starts in one hour

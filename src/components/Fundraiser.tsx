@@ -18,7 +18,7 @@ const eventInfo = [
 	{
 		icon: Clock,
 		label: "Time",
-		value: "3:30 – 5:30 PM",
+		value: "3:30 – 6:30 PM",
 	},
 	{
 		icon: MapPin,
@@ -40,7 +40,7 @@ const waysToHelp = [
 		icon: Users,
 		title: "Volunteer to Unload",
 		description:
-			"We need to help unload the cars of donations. We're looking for at least 3 folks to pitch in for about an hour during the 3:30–5:30 window.",
+			"We need to help unload the cars of donations. We're looking for at least 3 folks to pitch in for about an hour during the 3:30–6:30 window.",
 		detail:
 			"One hour helps more than you'd think. Grab a friend and show up to the Gibsonia store.",
 	},
