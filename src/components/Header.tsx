@@ -1,11 +1,35 @@
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import logo from "@/assets/logo.svg";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { Button } from "@/components/ui/button";
 
 const Header = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
+	const menuContainerRef = useRef<HTMLDivElement>(null);
+
+	useEffect(() => {
+		if (!isMenuOpen) return;
+
+		const handleKeyDown = (event: KeyboardEvent) => {
+			if (event.key === "Escape") setIsMenuOpen(false);
+		};
+		const handlePointerDown = (event: PointerEvent) => {
+			if (
+				menuContainerRef.current &&
+				!menuContainerRef.current.contains(event.target as Node)
+			) {
+				setIsMenuOpen(false);
+			}
+		};
+
+		document.addEventListener("keydown", handleKeyDown);
+		document.addEventListener("pointerdown", handlePointerDown);
+		return () => {
+			document.removeEventListener("keydown", handleKeyDown);
+			document.removeEventListener("pointerdown", handlePointerDown);
+		};
+	}, [isMenuOpen]);
 
 	const navLinks = [
 		{ href: "#fundraiser", label: "Fundraiser" },
@@ -22,9 +46,9 @@ const Header = () => {
 
 	return (
 		<header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
-			<div className="container mx-auto px-4">
+			<div ref={menuContainerRef} className="container mx-auto px-4">
 				<nav className="flex items-center justify-between h-16 md:h-20">
-					<a className="flex items-center gap-3" href="/" type="button">
+					<a className="flex items-center gap-3" href="/" aria-label="Pine-Richland Ultimate home">
 						<img
 							src={logo}
 							alt="PR Ultimate Logo"
@@ -49,8 +73,8 @@ const Header = () => {
 							</a>
 						))}
 						<ThemeToggle />
-						<Button variant="hero" size="sm">
-							Join Team
+						<Button variant="hero" size="sm" asChild>
+							<a href="#contact">Join Team</a>
 						</Button>
 					</div>
 
@@ -59,6 +83,8 @@ const Header = () => {
 						className="md:hidden p-2 text-foreground"
 						onClick={() => setIsMenuOpen(!isMenuOpen)}
 						aria-label="Toggle menu"
+						aria-expanded={isMenuOpen}
+						aria-controls="mobile-nav"
 						type="button"
 					>
 						{isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -67,7 +93,10 @@ const Header = () => {
 
 				{/* Mobile Navigation */}
 				{isMenuOpen && (
-					<div className="md:hidden py-4 border-t border-border animate-fade-in-up">
+					<div
+						id="mobile-nav"
+						className="md:hidden py-4 border-t border-border animate-fade-in-up"
+					>
 						<div className="flex flex-col gap-4">
 							{navLinks.map((link) => (
 								<a
@@ -81,8 +110,10 @@ const Header = () => {
 							))}
 							<div className="flex items-center gap-4 mt-2">
 								<ThemeToggle />
-								<Button variant="hero" size="sm" className="w-fit">
-									Join Team
+								<Button variant="hero" size="sm" className="w-fit" asChild>
+									<a href="#contact" onClick={() => setIsMenuOpen(false)}>
+										Join Team
+									</a>
 								</Button>
 							</div>
 						</div>

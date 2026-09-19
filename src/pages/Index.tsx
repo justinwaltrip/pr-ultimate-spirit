@@ -15,7 +15,13 @@ import SummerOpportunities from "@/components/SummerOpportunities";
 
 const Index = () => {
 	return (
-		<main className="min-h-screen">
+		<>
+			<a
+				href="#main"
+				className="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-[60] focus:rounded-md focus:bg-primary focus:px-4 focus:py-2 focus:font-display focus:text-sm focus:font-bold focus:uppercase focus:tracking-wide focus:text-primary-foreground"
+			>
+				Skip to content
+			</a>
 			<Header />
 			{/*
 			<Banner
@@ -25,19 +31,21 @@ const Index = () => {
 				callToAction={{ label: "I'm interested", href: "#contact" }}
 			/>
 			*/}
-			<Hero />
-			<Fundraiser />
-			<Schedule />
-			<About />
-			<History />
-			<News />
-			<Calendar />
-			<FAQ />
-			<SummerOpportunities />
-			<Resources />
-			<Contact />
-			<Footer />
-		</main>
+			<main id="main" className="min-h-screen">
+				<Hero />
+				<Fundraiser />
+				<Schedule />
+				<About />
+				<History />
+				<News />
+				<Calendar />
+				<FAQ />
+				<SummerOpportunities />
+				<Resources />
+				<Contact />
+				<Footer />
+			</main>
+		</>
 	);
 };
 

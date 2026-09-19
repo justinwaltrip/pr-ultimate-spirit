@@ -1,9 +1,11 @@
-import { Calendar as CalendarIcon, Download } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Calendar as CalendarIcon } from "lucide-react";
+// import { Download } from "lucide-react";
+// import { Button } from "@/components/ui/button";
 
 const Calendar = () => {
-	const winterLeagueIcsUrl =
-		"https://pittsburgh-ultimate.org/calendar/team?id=323649";
+	// The PHUL team feed only lists league games and currently has no upcoming
+	// ones, so the subscribe link is hidden until the next schedule is posted.
+	// const teamIcsUrl = "https://pittsburgh-ultimate.org/calendar/team?id=323649";
 
 	return (
 		<section id="calendar" className="py-20 md:py-32 bg-muted">
@@ -18,15 +20,14 @@ const Calendar = () => {
 					<p className="text-base sm:text-lg text-muted-foreground leading-relaxed px-2 sm:px-0 mb-6">
 						View upcoming practices, games, and team events.
 					</p>
+					{/* Subscribe button hidden until the feed has upcoming games.
 					<Button asChild variant="outline" className="gap-2">
-						<a
-							href={winterLeagueIcsUrl}
-							download="pine-richland-winter-league.ics"
-						>
+						<a href={teamIcsUrl} download="pine-richland-ultimate.ics">
 							<Download className="w-4 h-4" />
-							Subscribe to Winter League Calendar
+							Subscribe to Team Calendar
 						</a>
 					</Button>
+					*/}
 				</div>
 
 				<div className="max-w-5xl mx-auto">
@@ -42,6 +43,7 @@ const Calendar = () => {
 								src="https://calendar.google.com/calendar/embed?src=pinerichlandboysultimate%40gmail.com&ctz=America%2FNew_York&showTitle=0&showNav=1&showPrint=0&showTabs=1&showCalendars=0&showTz=0"
 								className="w-full h-full border-0"
 								title="PR Ultimate Team Calendar"
+								loading="lazy"
 							/>
 						</div>
 					</div>

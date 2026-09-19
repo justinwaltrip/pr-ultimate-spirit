@@ -1,16 +1,18 @@
 import { ChevronDown } from "lucide-react";
-import teamPhoto from "@/assets/team-photo.png";
+import teamPhoto from "@/assets/team-photo.webp";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
 	return (
-		<section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+		<section className="relative min-h-screen min-h-[100svh] flex items-center justify-center pt-20 overflow-hidden">
 			{/* Background Image with Overlay */}
 			<div className="absolute inset-0 z-0">
 				<img
 					src={teamPhoto}
 					alt="Pine-Richland Ultimate Frisbee Team"
 					className="w-full h-full object-cover"
+					fetchPriority="high"
+					decoding="async"
 				/>
 				<div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/60 to-black/85" />
 			</div>
