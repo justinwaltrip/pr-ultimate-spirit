@@ -48,7 +48,11 @@ const Header = () => {
 		<header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
 			<div ref={menuContainerRef} className="container mx-auto px-4">
 				<nav className="flex items-center justify-between h-16 md:h-20">
-					<a className="flex items-center gap-3" href="/" aria-label="Pine-Richland Ultimate home">
+					<a
+						className="flex items-center gap-3"
+						href="/"
+						aria-label="Pine-Richland Ultimate home"
+					>
 						<img
 							src={logo}
 							alt="PR Ultimate Logo"
@@ -111,6 +115,7 @@ const Header = () => {
 							<div className="flex items-center gap-4 mt-2">
 								<ThemeToggle />
 								<Button variant="hero" size="sm" className="w-fit" asChild>
+									{/* biome-ignore lint/a11y/useValidAnchor: in-page section link that also closes the mobile menu */}
 									<a href="#contact" onClick={() => setIsMenuOpen(false)}>
 										Join Team
 									</a>
